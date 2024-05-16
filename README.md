@@ -21,12 +21,12 @@ aplication clone from Facebook using react native and back end using mongodb
         <p>Home Page</p>
         <img src="asset/homepage.jpg" width="200" />
     </div>
-    <img style="margin-top: 200px" src="asset/firstArrowRigthOne.png" width="200" height="100" />
+    <img style="margin-top: 200px" src="asset/arrowDown.png" width="200" height="100" />
     <div>
         <p>Comment a Post</p>
         <img src="asset/comment.jpg" width="200" />
     </div>
-    <img style="margin-top: 200px" src="asset/firstArrowRigthOne.png" width="200" height="100" />
+    <img style="margin-top: 200px" src="asset/arrowDown.png" width="200" height="100" />
         <div>
         <p>After add a new Post</p>
         <img src="asset/detailPost.jpg" width="200" />
@@ -40,7 +40,7 @@ aplication clone from Facebook using react native and back end using mongodb
         <p>Add a new Post</p>
         <img src="asset/addPost.jpg" width="200" />
     </div>
-    <img style="margin-top: 200px" src="asset/firstArrowRigthOne.png" width="200" height="100" />
+    <img style="margin-top: 200px" src="asset/arrowDown.png" width="200" height="100" />
     <div>
         <p>After add a new Post</p>
         <img src="asset/addNewPost.jpg" width="200" />
@@ -54,7 +54,7 @@ aplication clone from Facebook using react native and back end using mongodb
         <p>Find user</p>
         <img src="asset/allUser.jpg" width="200" />
     </div>
-    <img style="margin-top: 200px" src="asset/firstArrowRigthOne.png" width="200" height="100" />
+    <img style="margin-top: 200px" src="asset/arrowDown.png" width="200" height="100" />
     <div>
         <p>Search user</p>
         <img src="asset/searchUser.jpg" width="200" />
@@ -65,5 +65,4 @@ aplication clone from Facebook using react native and back end using mongodb
 
 <p>User Profile</p>
 <img src="asset/userProfil.jpg" width="200" />
-
 
