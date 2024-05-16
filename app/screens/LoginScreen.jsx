@@ -63,7 +63,7 @@ export default function LoginScreen({ navigation }) {
         <Text style={styles.subtitle}>Sign in to your account</Text>
 
         <SizedBox height={5} />
-          {error ? <Text>{JSON.stringify(error?.graphQLErrors[0].message)}</Text> : <Text></Text>}
+          {/* {error ? <Text>{JSON.stringify(error?.graphQLErrors[0].message)}</Text> : <Text></Text>} */}
         <SizedBox height={5} />
 
         <Pressable>

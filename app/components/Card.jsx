@@ -82,7 +82,7 @@ const HomeCard = ({ post, navigation }) => {
         </Pressable>
         <Text style={{ margin: 5 }}>{post?.content}</Text>
         <Image
-          source={{ uri: post.imgUrl }}
+          source={{ uri: post?.imgUrl ?? "https://picsum.photos/700"}}
           defaultSource={{ uri: "https://picsum.photos/700" }}
           style={styles.imageSize}
           // // alt="https://picsum.photos/700"

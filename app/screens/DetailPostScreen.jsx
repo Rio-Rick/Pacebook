@@ -87,7 +87,7 @@ export default function DetailPostScreen({ route, navigation }) {
             ))}
           </View>
           <Image
-            source={{ uri: data?.getPostById?.imgUrl }}
+            source={{ uri: data?.getPostById?.imgUrl ?? "https://picsum.photos/700"}}
             defaultSource={{ uri: "https://picsum.photos/700" }}
             style={styles.imageSize}
           />

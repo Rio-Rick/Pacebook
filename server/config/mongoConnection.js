@@ -2,7 +2,6 @@ require('dotenv').config()
 const {MongoClient} = require('mongodb')
 
 const uri = process.env.MONGODB_URL;
-// const uri = "rioroderick:KambingGeming123@ac-nfbmvyy-shard-00-00.gryhpzg.mongodb.net:27017,ac-nfbmvyy-shard-00-01.gryhpzg.mongodb.net:27017,ac-nfbmvyy-shard-00-02.gryhpzg.mongodb.net:27017/?replicaSet=atlas-rk9r1r-shard-0&ssl=true&authSource=admin"
 
 // const client = new MongoClient(uri);
 const client = new MongoClient(uri); 

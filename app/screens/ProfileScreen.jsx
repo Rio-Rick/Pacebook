@@ -37,7 +37,7 @@ export default function ProfileScreen() {
       <ImageBackground
         style={{ height: 200 }}
         source={{
-          uri: "https://pixabay.com/get/g4c811f69af3eca9e6ed189f16be007f8a224178fc05597dfc2528393427b1ca9d0f5b2d7228c20ddb54eb18b50ffcfa5d9c101364646f6ac9ae32629784535f4_640.jpg",
+          uri: "https://cdn.pixabay.com/photo/2022/11/29/11/30/lake-7624330_1280.jpg",
         }}
       ></ImageBackground>
       <View>

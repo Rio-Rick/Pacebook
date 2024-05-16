@@ -18,7 +18,7 @@ export default function HomeScreen(props) {
   // console.log(props);
   const { data, loading, error } = useQuery(GET_POSTS);
 
-  // console.log(data);
+  console.log(data);
   if (loading)
   return (
     <Text style={{ textAlign: "center", justifyContent: "center" }}>

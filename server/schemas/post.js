@@ -2,12 +2,12 @@
 const { getDatabase } = require("../config/mongoConnection");
 const { findAllPost, findOnePostById } = require("../model/post");
 const { GraphQLError } = require("graphql");
-const Redis = require('ioredis');
-const redis = new Redis({
-    host: process.env.REDIS_HOST,
-    port: process.env.REDIS_PORT,
-    password: process.env.REDIS_PASSWORD
-});
+// const Redis = require('ioredis');
+// const redis = new Redis({
+//     host: process.env.REDIS_HOST,
+//     port: process.env.REDIS_PORT,
+//     password: process.env.REDIS_PASSWORD
+// });
 const typeDefs = `#graphql
     type Comment {
         content: String
@@ -67,13 +67,13 @@ const resolvers = {
     Query: {
         getPosts: async (_parent, {}, contextValue) => {
             await contextValue.auth()
-            const postCache = await redis.get("data:posts");
+            // const postCache = await redis.get("data:posts");
 
-            if(postCache) {
-                return JSON.parse(postCache)
-            }
+            // if(postCache) {
+            //     return JSON.parse(postCache)
+            // }
             const posts = await findAllPost();
-            redis.set("data:posts", JSON.stringify(posts))
+            // redis.set("data:posts", JSON.stringify(posts))
             return posts;
         },
         getPostById: async (_parent, args, contextValue) => {
@@ -100,7 +100,7 @@ const resolvers = {
                 updatedAt : date,
                 createdAt : date
             })
-            redis.del("data:posts")
+            // redis.del("data:posts")
             const post = await postCollection.findOne({
                 _id: new ObjectId(newPost.insertedId),
             })
@@ -130,7 +130,7 @@ const resolvers = {
                     },
                 }
             );
-            redis.del("data:posts")
+            // redis.del("data:posts")
 
             const commentPost = await postCollection.findOne({
                 _id: new ObjectId(id)
@@ -148,7 +148,7 @@ const resolvers = {
                 _id: new ObjectId(id),
                 'likes.username' : username
             })
-            redis.del("data:posts")
+            // redis.del("data:posts")
 
             // console.log(find);
             // console.log(find);
